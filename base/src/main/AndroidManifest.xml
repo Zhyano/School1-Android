@@ -25,24 +25,13 @@
             android:theme="@style/AppTheme.NoActionBar.Drawer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
-
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:host="whirlwind-studios.org"
-                    android:pathPattern="/school1"
-                    android:scheme="http" />
             </intent-filter>
         </activity>
         <activity
             android:name=".activity.ConfigItemActivity"
             android:parentActivityName=".activity.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.SigninActivity"
             android:theme="@style/AppTheme.NoActionBar.Signin" />
@@ -71,58 +60,12 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".activity.LessonActivity">
-            <intent-filter android:order="1">
-                <action android:name="android.intent.action.VIEW" />
+        <activity android:name=".activity.LessonActivity" />
 
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
+        <activity android:name=".activity.SchoolLoginActivity" />
 
-                <data
-                    android:host="example.com"
-                    android:pathPattern="/.*"
-                    android:scheme="https" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".activity.SchoolLoginActivity">
-            <intent-filter android:order="1">
-                <action android:name="android.intent.action.VIEW" />
+        <activity android:name=".activity.ConfigCourseActivity" />
 
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data
-                    android:host="example.com"
-                    android:pathPattern="/.*"
-                    android:scheme="https" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".activity.ConfigCourseActivity">
-            <intent-filter android:order="1">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data
-                    android:host="example.com"
-                    android:pathPattern="/.*"
-                    android:scheme="https" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".activity.SchoolCreateActivity">
-            <intent-filter android:order="1">
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data
-                    android:host="com.whirlwind"
-                    android:pathPattern="/.*"
-                    android:scheme="https" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".activity.SchoolCreateActivity" />
     </application>
-
 </manifest>

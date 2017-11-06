@@ -8,7 +8,7 @@ android {
         minSdkVersion 17
         targetSdkVersion 26
         applicationId "com.whirlwind.school1"
-        versionCode 38
+        versionCode 39
         versionName "2.0.0beta"
     }
     buildTypes {

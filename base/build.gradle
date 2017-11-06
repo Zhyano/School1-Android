@@ -63,7 +63,6 @@ dependencies {
     implementation "com.google.firebase:firebase-auth:$google_version"
     implementation "com.google.firebase:firebase-firestore:$google_version"
     implementation "com.google.firebase:firebase-messaging:$google_version"
-    //implementation "com.google.firebase:firebase-database:$google_version"
 
     // Auth providers
     compile "com.google.android.gms:play-services-auth:$google_version"
