@@ -33,3 +33,5 @@
 -keepclassmembers class com.whirlwind.school1.models.** {
   *;
 }
+
+-keep class android.support.v7.widget.SearchView { *; }
